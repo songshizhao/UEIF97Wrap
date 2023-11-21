@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>IAPWS.IF97</Title>
+    <Description>water vapor physical properties for industry（x64 only）
+工业用水蒸汽物性计算，对UEsolf开发的进行包装以便可以方便的C#程序中调用
+我只编译了x64版本的dll并引用，如需其他架构请前往原作者开源包自行编译。</Description>
+    <PackageProjectUrl>https://gitee.com/uesoft/uewaspmobile</PackageProjectUrl>
+    <RepositoryUrl>https://gitee.com/songshizhao/uewaspmobile</RepositoryUrl>
+    <PackageTags>水物性;IF97;</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UEwasp.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="UEwasp.dll" />
+  </ItemGroup>
+
+</Project>
